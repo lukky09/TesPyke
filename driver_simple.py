@@ -63,7 +63,8 @@ def bc_test_hero():
     try:
         with engine.prove_goal('hero_simple_rules_qs.hero_name($name)') as gen: #STUDENTS: you will need to edit this line
             for vars, plan in gen:
-                print("You should bring: %s" % (vars['name'])) #STUDENTS: you will need to edit this line
+                print("Your hero is : %s" % (vars['name'])) #STUDENTS: you will need to edit this line
+                break
 
     except Exception:
         # This converts stack frames of generated python functions back to the
