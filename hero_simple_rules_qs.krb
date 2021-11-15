@@ -10,33 +10,33 @@ is_hulk
         check $ans in (1,)
         
 is_cmarvel
-    use hero_name(Captain Marvel)
+    use hero_name(Captain_Marvel)
     when
         heroquestion.choose_color($ans)
         check $ans in (3,)
         
 is_switch
-    use hero_name(Scarlet Witch)
+    use hero_name(Scarlet_Witch)
     when
         heroquestion.use_cape(True)
 
 is_bwidow
-    use hero_name(Black Widow)
+    use hero_name(Black_Widow)
     when
         heroquestion.is_male(False)
 
 is_bpanther
-    use hero_name(Black Panther)
+    use hero_name(Black_Panther)
     when
         heroquestion.have_superpower(True)
 
 is_iman
-    use hero_name(Iron Man)
+    use hero_name(Iron_Man)
     when
         heroquestion.can_fly(True)
 
 is_aman
-    use hero_name(Ant Man)
+    use hero_name(Ant_Man)
     when
         heroquestion.can_fly(False)
         heroquestion.have_superpower(False)
