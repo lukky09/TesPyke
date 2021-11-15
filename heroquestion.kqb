@@ -1,0 +1,35 @@
+
+is_male($ans)
+	Is your hero a man?
+	---
+	$ans = yn
+
+can_fly($ans)
+	Can your hero fly?
+	---
+	$ans = yn
+
+have_superpower($ans)
+	Does your hero have superpowers?
+	---
+	$ans = yn
+
+use_cape($ans)
+	Does your hero wear a cape?
+	---
+	$ans = yn
+	
+is_human($ans)
+	Is your hero a normal human?
+	---
+	$ans = yn
+	
+choose_color($ans)
+    What color does your hero mostly use?
+	---
+	$ans = select_1
+		1: Mostly green
+		2: Mostly black
+		3: Mostly blue
+		4: Mostly red
+		5: Not sure

@@ -51,5 +51,27 @@ def bc_test_questions():
 
     print()
     print("done")
+    
+def bc_test_hero():
+
+    engine.reset()      # Allows us to run tests multiple times.
+
+    engine.activate('hero_simple_rules_qs') #STUDENTS: you will need to edit the name of your rule file here
+
+    print("doing proof")
+    
+    try:
+        with engine.prove_goal('hero_simple_rules_qs.hero_name($name)') as gen: #STUDENTS: you will need to edit this line
+            for vars, plan in gen:
+                print("You should bring: %s" % (vars['name'])) #STUDENTS: you will need to edit this line
+
+    except Exception:
+        # This converts stack frames of generated python functions back to the
+        # .krb file.
+        krb_traceback.print_exc()
+        sys.exit(1)
+
+    print()
+    print("done")
 
 
