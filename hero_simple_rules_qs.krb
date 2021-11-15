@@ -25,6 +25,7 @@ is_switch
 is_bwidow
     use hero_name(Black_Widow)
     when
+        heroquestion.use_cape(False)
         heroquestion.is_male(False)
         heroquestion.choose_color($ans)
         check $ans in (2,)
@@ -32,6 +33,7 @@ is_bwidow
 is_bpanther
     use hero_name(Black_Panther)
     when
+        heroquestion.use_cape(False)
         heroquestion.have_superpower(True)
         heroquestion.choose_color($ans)
         check $ans in (2,)
@@ -39,6 +41,8 @@ is_bpanther
 is_iman
     use hero_name(Iron_Man)
     when
+        heroquestion.use_cape(False)
+        heroquestion.have_superpower(False)
         heroquestion.can_fly(True)
         heroquestion.choose_color($ans)
         check $ans in (4,)
@@ -47,6 +51,12 @@ is_iman
 is_aman
     use hero_name(Ant_Man)
     when
+        heroquestion.use_cape(False)
         heroquestion.can_fly(False)
         heroquestion.have_superpower(False)
         heroquestion.is_male(True)
+        heroquestion.choose_color($ans)
+        check $ans in (4,)
+
+is_no
+    use hero_name(No_Hero_Found)
