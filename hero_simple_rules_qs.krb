@@ -19,6 +19,8 @@ is_switch
     use hero_name(Scarlet_Witch)
     when
         heroquestion.use_cape(True)
+        heroquestion.choose_color($ans)
+        check $ans in (5,)
 
 is_bwidow
     use hero_name(Black_Widow)
