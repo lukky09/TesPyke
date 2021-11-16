@@ -20,7 +20,7 @@ use_cape($ans)
 	$ans = yn
 	
 is_human($ans)
-	Is your hero a normal human?
+	Is your hero a human?
 	---
 	$ans = yn
 	
